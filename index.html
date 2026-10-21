@@ -6,12 +6,7 @@
       (function () {
         try {
           var saved = localStorage.getItem("veau.site.theme");
-          var mode =
-            saved === "light" || saved === "dark"
-              ? saved
-              : window.matchMedia("(prefers-color-scheme: dark)").matches
-                ? "dark"
-                : "light";
+          var mode = saved === "dark" ? "dark" : "light";
           document.documentElement.dataset.theme = mode;
           document.documentElement.style.colorScheme = mode;
         } catch (e) {
@@ -40,8 +35,8 @@
       rel="stylesheet"
     />
     <title>Veau.ai — Offline auto captions. No subscription.</title>
-    <script type="module" crossorigin src="./assets/index-CQLl2Xor.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DeCy0cke.css">
+    <script type="module" crossorigin src="./assets/index-CYl0vdKL.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DK8fsQbT.css">
   </head>
   <body>
     <div id="root"></div>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("veau.site.theme");
+          var mode =
+            saved === "light" || saved === "dark"
+              ? saved
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          document.documentElement.dataset.theme = mode;
+          document.documentElement.style.colorScheme = mode;
+        } catch (e) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Offline AI captioning for Windows. 15-day free trial, then from $25 once. Local Whisper and Gemma 4, Hindi/Hinglish, no uploads or accounts."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Veau.ai — Offline auto captions. No subscription." />
+    <meta
+      property="og:description"
+      content="Local AI captioning for Windows. 15-day free trial, then a one-time license. Whisper, Gemma 4 and FFmpeg on your machine. No uploads, no accounts, no subscription."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" sizes="128x128" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Veau.ai — Offline auto captions. No subscription.</title>
+    <script type="module" crossorigin src="./assets/index-CQLl2Xor.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DeCy0cke.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
